@@ -24,10 +24,47 @@ header {
     box-shadow: var(--shadow);
 
     height: 100px;
+
+    display: flex;
+}
+
+img {
+    margin-top: 10px;
+    margin-left: 10px;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 2000px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+
+    margin-left: 40px;
+    margin-bottom: 20px;
+
+    align-content: end;
 }
 
 nav {
-    background-color: var(--nav-color);
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    align-content: end;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -46,16 +83,38 @@ section {
 div {
     background-color: var(--nav-color);
 
-    flex: 20%;
+    flex: 15%;
+}
+
+section div h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    text-align: center;
+    font-size: 2rem;
+}
+
+section div ul {
+    font-size: 1.8rem;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin: 0 20px;
+}
+
+section div ul li {
+    text-align: center;
 }
 
 #content {
     background-color: rgb(255, 255, 255);
     box-shadow: var(--shadow);
 
+    padding: 20px;
     margin: 20px;
 
-    flex: 80%;
+    flex: 85%;
 }
 
 
