@@ -55,7 +55,7 @@ nav {
     align-content: end;
 }
 
-ul {
+.navMenu, nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -80,13 +80,13 @@ section {
     display: flex;
 }
 
-div {
+.nav {
     background-color: var(--nav-color);
 
     flex: 15%;
 }
 
-section div h2 {
+.nav h2 {
     margin-top: 20px;
     margin-bottom: 40px;
 
@@ -115,8 +115,54 @@ section div ul li {
     margin: 20px;
 
     flex: 85%;
+    display: grid;
+    grid-template: 300px / repeat(auto-fit, 300px);
+    gap: 20px;
 }
 
+.menuCard {
+    padding: 20px 10px;
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+.menuCard:hover {
+    transform: scale(1.1);
+}
+
+.menuCard > h2 {
+    font-size: 1.5rem;
+}
+
+.menuCard > p {
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    text-align: end;
+}
+
+.info {
+    display: flex;
+}
+
+.info > img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 0;
+}
+
+.info > ul {
+    list-style: none;
+    border: none;
+}
 
 
 
