@@ -1,5 +1,58 @@
-(function() {
-})();
+function homemade() {
+    const content = document.querySelector("#content");
+    content.replaceChildren();
+    content.classList.remove("contentGrid");
+
+    const img = document.createElement("img");
+    img.setAttribute("src", "./img/interior.jpg");
+
+    const h1 = document.createElement("h1");
+    h1.textContent = "About our cafe";
+
+    content.appendChild(img);
+    content.appendChild(h1);
+    const text = [
+        "Cozy Caffee is a small corner of coziness and warmth in the heart of your city. We opened to give our guests an atmosphere of comfort and tranquility, where everyone can relax from the hustle and bustle of the city, enjoy your favorite dishes and drinks, spend time with friends or be alone with yourself.",
+        "We are proud of our diverse menu: from hearty breakfasts and fresh salads to appetizing desserts and flavorful pastries, prepared with care and love. Each of our drinks, be it a cup of hot chocolate or a cappuccino with thick foam, warms the soul and brings a smile.",
+        "The interior of our cafe is made in warm, pleasant tones - from delicate peach to rich pumpkin color, creating an atmosphere of home comfort. Attention to details, friendly staff and care about every guest is our pride and business card.",
+        "We love our guests and try to make every visit special. Our cafe is always cozy - here you will find not only delicious food and drinks, but also an opportunity to relax, be charged with positivity and enjoy the warmth of our team.",
+        "Come and visit us at Cozy Caffee and feel the cozy atmosphere like at home. You are always welcome!"
+    ];
+
+    for (let i = 0; i < 5; i++) {
+        const p = document.createElement("p");
+        p.textContent = text[i];
+        content.appendChild(p);
+    };
+};
+homemade();
+
+
+document.querySelector("#homeMade").addEventListener("click", () => {
+    homemade();
+});
+
+
+function contactMade() {
+    const content = document.querySelector("#content");
+    content.replaceChildren();
+    content.classList.remove("contentGrid");
+
+    content.textContent = "TEST";
+};
+
+
+document.querySelector("#contactMade").addEventListener("click", () => {
+    contactMade();
+});
+
+// About our cafe
+// Cozy Caffee is a small corner of coziness and warmth in the heart of your city. We opened to give our guests an atmosphere of comfort and tranquility, where everyone can relax from the hustle and bustle of the city, enjoy your favorite dishes and drinks, spend time with friends or be alone with yourself.
+// We are proud of our diverse menu: from hearty breakfasts and fresh salads to appetizing desserts and flavorful pastries, prepared with care and love. Each of our drinks, be it a cup of hot chocolate or a cappuccino with thick foam, warms the soul and brings a smile.
+// The interior of our cafe is made in warm, pleasant tones - from delicate peach to rich pumpkin color, creating an atmosphere of home comfort. Attention to details, friendly staff and care about every guest is our pride and business card.
+// We love our guests and try to make every visit special. Our cafe is always cozy - here you will find not only delicious food and drinks, but also an opportunity to relax, be charged with positivity and enjoy the warmth of our team.
+// Come and visit us at Cozy Caffee and feel the cozy atmosphere like at home. You are always welcome!
+
 
 // Данил🧙🏻‍♂️, [02.06.2025 15:20]
 // О нашем кафе
@@ -8,6 +61,7 @@
 // Интерьер нашего кафе выполнен в теплых, приятных тонах — от нежного персикового до насыщенного цвета тыквы, создавая атмосферу домашнего уюта. Внимание к деталям, дружелюбный персонал и забота о каждом госте — наша гордость и визитная карточка.
 // Мы любим наших гостей и стараемся делать каждый визит особенным. В нашем кафе всегда уютно — здесь вас ждет не только вкусная еда и напитки, но и возможность расслабиться, зарядиться позитивом и насладиться теплом нашей команды.
 // Загляните к нам в Cozy Caffee и почувствуйте атмосферу уюта, как дома. Мы всегда рады вам!
+
 
 // Данил🧙🏻‍♂️, [02.06.2025 15:28]
 // О нашем кафе
@@ -23,6 +77,8 @@
 // Выпечка и десерты: наши пекари каждый день пекут слоёные круассаны с начинкой, тёплые маффины с черникой и шоколадные брауни; не обойтись без фирменного чизкейка «Cozy» и медовика с «тыквенной» ноткой.
 // Напитки: разнообразие видов кофе (от классического эспрессо и капучино до авторских латте с пряностями), ароматный горячий шоколад с маршмеллоу, фирменный чайный микс «Осеннее утро» — сочетание чёрного чая, корицы и гвоздики. Для любителей холодного — лимонады собственного приготовления, смузи и фреши из сезонных фруктов.
 // Мы уделяем особое внимание качества ингредиентов: наше молоко — только пастеризованное, без растительных добавок; кофе — отобранные зерна арабики, которые обжариваются небольшими партиями; все фрукты и овощи — локальные, от проверенных фермеров. Это позволяет сохранять натуральный вкус и пользу продуктов.
+
+
 // Наши ценности и миссия
 // Мы верим, что хороший кофе и вкусная еда способны соединять людей, заряжать их позитивом и создавать незабываемые воспоминания. Наша миссия — не просто кормить и поить гостей, а создавать пространство для тёплых встреч: деловых собраний, дружеских посиделок или тихого вечера с книгой.
 // Гостеприимство: для нас важно, чтобы каждый — от ребёнка до пожилого человека — почувствовал заботу и внимание. Наши бариста и официанты всегда рады улыбнуться, рассказать о новинках меню и помочь с выбором.

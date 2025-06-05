@@ -6,9 +6,12 @@ document.querySelectorAll(".navMenu li").forEach(child => {child.addEventListene
     const sectionName = event.target.text.toLowerCase();
     const currentSection = menuSections[sectionName];
 
-    for (let i = 0; i < currentSection.length; i++) {
-        const content = document.querySelector("#content");
+    const content = document.querySelector("#content");
+    content.replaceChildren();
 
+    content.classList.add("contentGrid");
+
+    for (let i = 0; i < currentSection.length; i++) {
         const menuCard = document.createElement("div");
         menuCard.classList.add("menuCard");
 
@@ -30,7 +33,7 @@ document.querySelectorAll(".navMenu li").forEach(child => {child.addEventListene
         };
 
         const p = document.createElement("p");
-        p.textContent = `${currentSection[i].price}$`;
+        p.textContent = `$${currentSection[i].price}`;
 
         info.appendChild(img);
         info.appendChild(ul);
