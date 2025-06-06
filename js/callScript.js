@@ -45,16 +45,3 @@ document.querySelectorAll(".navMenu li").forEach(child => {child.addEventListene
         content.appendChild(menuCard);
     };
 })});
-
-//  <div class="menuCard">
-//                 <h2>Omelette with cheese and herbs</h2>
-//                 <div class="info">
-//                     <img src="./img/logo.jpg">
-//                     <ul>
-//                         <li>eggs</li>
-//                         <li>cheese</li>
-//                         <li>herbs</li>
-//                     </ul>
-//                 </div>
-//                 <p>3$</p>
-//     </div>
