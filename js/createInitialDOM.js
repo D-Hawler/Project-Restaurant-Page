@@ -90,7 +90,7 @@ function homemade() {
         content.appendChild(p);
     };
 };
-// homemade();
+homemade();
 
 
 document.querySelector("#homeMade").addEventListener("click", () => {
@@ -102,6 +102,94 @@ function contactMade() {
     const content = document.querySelector("#content");
     content.replaceChildren();
     content.classList.remove("contentGrid");
+    
+    content.innerHTML = `<div class="contactTitle">
+                <div>
+                    <div class="addressCard">
+                        <h2>New York — Cozy Caffee Flagship Store</h2>
+                        <address>
+                            <p>
+                                <strong>Address:</strong><br>
+                                456 Madison Avenue<br>
+                                New York, NY 10022
+                            </p>
+
+                            <p><strong>Phone:</strong><br>
+                            <a href="#">(212) 555-0123</a><br>
+                            <a href="#">(917) 555-0198</a></p>
+
+                            <p><strong>Email:</strong><br>
+                            <a href="#">ny@cozycaffee.com</a></p>
+                        </address>
+                    </div>
+                    <div class="addressCard">
+                        <h2>Chicago — Cozy Caffee</h2>
+                        <address>
+                            <p>
+                                <strong>Address:</strong><br>
+                                789 North Clark Street<br>
+                                Chicago, IL 60654
+                            </p>
+
+                            <p><strong>Phone:</strong><br>
+                            <a href="#">(312) 555-0175</a><br>
+                            <a href="#">(773) 555-0247</a></p>
+
+                            <p><strong>Email:</strong><br>
+                            <a href="#">chicago@cozycaffee.com</a></p>
+                        </address>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>Store Hours</h2>
+                        <p>Monday–Friday: 8:00 AM – 8:00 PM<br>
+                        Saturday: 9:00 AM – 7:00 PM<br>
+                        Sunday: 9:00 AM – 5:00 PM</p>
+                    </div>
+                    <div>
+                        <h2>Store Locations</h2>
+                        <a href="#">View all Cozy Caffee locations</a>
+                    </div>
+                    <div>
+                        <h2>Marketing & Media Inquiries</h2>
+                        <p>Email: <a href="#">media@cozycaffee.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <h1>Service Centers:</h1>
+            <div class="serviceTitle">
+                <div class="addressCard">
+                    <h2>New York Service Center</h2>
+                    <address>
+                        <p><strong>Address:</strong><br>
+                           123 Brew Street, Suite 6/8<br>
+                           New York, NY 10001</p>
+
+                        <p><strong>Phone:</strong><br>
+                           <a href="#">(212) 555-0456</a><br>
+                           <a href="#">(917) 555-0277</a></p>
+                    </address>
+                </div>
+                <div class="addressCard">
+                    <h2>Chicago Service Center</h2>
+                    <address>
+                        <p><strong>Address:</strong><br>
+                           1050 Bean Boulevard<br>
+                           Chicago, IL 60611</p>
+
+                        <p><strong>Phone:</strong><br>
+                           <a href="#">(312) 555-0234</a><br>
+                           Mobile: <a href="#">(773) 555-0189</a></p>
+                    </address>
+                </div>
+                <div class="addressCard">
+                    <h2>Service Center Hours:</h2>
+                    <p>Mon–Fri: 9:00 AM – 5:00 PM<br>
+                        Saturday: 10:00 AM – 3:00 PM<br>
+                        Sunday: Closed</p>
+                </div>
+            </div>`;
 };
 
 
